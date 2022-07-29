@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">scmp-mobile-assignment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password should be letter and number only , 6–10 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="load_more">Load More</string>
+    <string name="token">Token : %s</string>
 </resources>
