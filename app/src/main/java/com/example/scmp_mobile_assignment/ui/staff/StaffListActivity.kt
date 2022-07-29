@@ -5,13 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.scmp_mobile_assignment.R
 import com.example.scmp_mobile_assignment.data.remote.StaffRepository
 import com.example.scmp_mobile_assignment.databinding.ActivityStaffListBinding
-import com.example.scmp_mobile_assignment.ui.login.LoginViewModel
-import com.example.scmp_mobile_assignment.utils.hide
-import com.example.scmp_mobile_assignment.utils.show
 import com.example.scmp_mobile_assignment.utils.showIf
 
 class StaffListActivity : AppCompatActivity() {

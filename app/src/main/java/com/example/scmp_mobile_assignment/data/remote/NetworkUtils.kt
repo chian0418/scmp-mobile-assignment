@@ -3,16 +3,8 @@ package com.example.scmp_mobile_assignment.data.remote
 import android.util.Log
 import com.example.scmp_mobile_assignment.data.model.raw.ApiResponseData
 import com.example.scmp_mobile_assignment.data.model.raw.LoginRequestData
-import com.example.scmp_mobile_assignment.data.model.raw.LoginResponseData
-import com.example.scmp_mobile_assignment.data.model.raw.StaffResponseData
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import kotlinx.coroutines.channels.awaitClose
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.callbackFlow
-import kotlinx.coroutines.flow.flatMap
-import kotlinx.coroutines.flow.map
-import org.json.JSONObject
 import java.io.*
 import java.lang.Error
 import java.net.HttpURLConnection

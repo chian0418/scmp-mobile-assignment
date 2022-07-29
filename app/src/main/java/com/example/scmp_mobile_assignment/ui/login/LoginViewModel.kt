@@ -4,7 +4,6 @@ import androidx.lifecycle.*
 import com.example.scmp_mobile_assignment.R
 import com.example.scmp_mobile_assignment.data.model.raw.LoginResponseData
 import com.example.scmp_mobile_assignment.data.remote.LoginRepository
-import com.example.scmp_mobile_assignment.data.remote.NetworkUtils
 import com.example.scmp_mobile_assignment.utils.RegexUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.catch

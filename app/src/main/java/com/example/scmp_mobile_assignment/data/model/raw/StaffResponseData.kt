@@ -1,6 +1,7 @@
 package com.example.scmp_mobile_assignment.data.model.raw
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 data class StaffResponseData(
@@ -12,7 +13,7 @@ data class StaffResponseData(
     val total: Int,
     @SerializedName(value = "total_pages")
     val totalPages: Int
-)
+): Serializable
 
 data class Staff(
     val avatar: String,
@@ -22,4 +23,4 @@ data class Staff(
     val id: Int,
     @SerializedName(value="last_name")
     val lastName: String
-)
+):Serializable

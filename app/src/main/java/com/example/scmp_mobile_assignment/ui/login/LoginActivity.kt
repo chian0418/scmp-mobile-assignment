@@ -2,18 +2,12 @@ package com.example.scmp_mobile_assignment.ui.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.widget.doAfterTextChanged
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
-import androidx.lifecycle.get
-import com.example.scmp_mobile_assignment.R
 import com.example.scmp_mobile_assignment.data.remote.LoginRepository
 import com.example.scmp_mobile_assignment.databinding.ActivityLoginBinding
 import com.example.scmp_mobile_assignment.ui.staff.StaffListActivity
-import com.example.scmp_mobile_assignment.utils.hide
-import com.example.scmp_mobile_assignment.utils.show
-import com.example.scmp_mobile_assignment.utils.showToast
+import com.example.scmp_mobile_assignment.utils.*
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -65,6 +59,7 @@ class LoginActivity : AppCompatActivity() {
         viewModel.loginResult.observe(this) {
             if (it.error.isNullOrEmpty()) {
                 StaffListActivity.start(this,it.token?:"")
+                leaveFromLeft()
                 showToast("Login Success")
             } else {
                 showToast(it.error)

@@ -2,10 +2,7 @@ package com.example.scmp_mobile_assignment.ui.staff
 
 import androidx.lifecycle.*
 import com.example.scmp_mobile_assignment.data.model.StaffData
-import com.example.scmp_mobile_assignment.data.remote.LoginRepository
-import com.example.scmp_mobile_assignment.data.remote.NetworkUtils
 import com.example.scmp_mobile_assignment.data.remote.StaffRepository
-import com.example.scmp_mobile_assignment.ui.login.LoginViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect

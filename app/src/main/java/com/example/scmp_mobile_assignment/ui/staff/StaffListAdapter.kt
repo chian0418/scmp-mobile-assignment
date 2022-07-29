@@ -2,11 +2,9 @@ package com.example.scmp_mobile_assignment.ui.staff
 
 import android.graphics.Bitmap
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.scmp_mobile_assignment.data.model.StaffData
-import com.example.scmp_mobile_assignment.data.model.raw.Staff
 import com.example.scmp_mobile_assignment.databinding.ViewStaffFooterBinding
 import com.example.scmp_mobile_assignment.databinding.ViewStaffItemBinding
 import com.example.scmp_mobile_assignment.utils.BaseViewHolder
