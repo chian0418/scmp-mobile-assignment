@@ -53,7 +53,7 @@ object NetworkUtils {
             line = bufReader.readLine()
         }
         Log.d(TAG, "Response : $readTextBuf")
-        return if (responseCode in 200..399) {
+        return if (responseCode == 200){
             ApiResponseData(true, readTextBuf.toString(), null)
         } else {
             ApiResponseData(false, null, Error(readTextBuf.toString()))
@@ -96,7 +96,7 @@ object NetworkUtils {
             line = bufReader.readLine()
         }
          Log.d(TAG, "Response : $readTextBuf")
-        return if (responseCode in 200..399) {
+        return if (responseCode == 200) {
             ApiResponseData(true, readTextBuf.toString(), null)
         } else {
             ApiResponseData(false, null, Error(readTextBuf.toString()))
